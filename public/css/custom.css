@@ -1,0 +1,116 @@
+.smBtn{
+    padding: 5px .75rem;
+    font-size: 14px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    margin-right: 5px;
+    top: -1px;
+    font-size: 16px;
+    position: relative;
+}
+
+.was-validated .input-group-text{
+    /* border-color: #f46a6a; */
+}
+
+input{
+    box-shadow: none !important;
+}
+
+.main-content .select2-container{
+    width: 100% !important;
+}
+
+.table.dataTable.dtr-inline.collapsed>tbody>tr>td, table.dataTable.dtr-inline.collapsed>tbody>tr>td{
+    vertical-align: middle;
+}
+
+table.dataTable>tbody>tr.child ul.dtr-details{
+    display: block;
+}
+
+table.dataTable>tbody>tr.child span.dtr-title{
+    min-width: 95px;
+}
+
+#ticket_table .badge{
+    display: block;
+    padding: .35em 1em;
+    font-size: 13px;
+}
+
+#ticket_table .select2-container{
+    min-width: 230px !important;
+}
+
+table.dataTable>tbody>tr.child ul.dtr-details>li{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+table.table-bordered.dataTable th.min-100{
+    min-width: 200px !important;
+    max-width: 300px !important;
+    width: 300px !important;
+}
+
+table#ticket_table.dataTable.nowrap th, table#ticket_table.dataTable.nowrap td{
+    white-space: initial;
+}
+
+.fs-label-wrap .fs-label {
+    padding: 6px 25px 6px 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #495057;
+    font-size: 14px;
+}
+.fs-arrow{
+    border-color: #adb5bd transparent transparent transparent!important;
+    border-width: 6 0px 6px 6px!important;
+    border-style: solid;
+    right: 10px;
+}
+.fs-label-wrap{
+    border: 1px solid #ced4da;
+}
+.fs-open  .fs-arrow{
+    border-color: transparent transparent #adb5bd transparent!important;
+    border-width: 0 6px 6px 6px!important;
+    border-style: solid;
+}
+.fs-wrap.multiple .fs-option{
+    border: 0;
+}
+.fs-dropdown{
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px rgb(15 34 58 / 12%);
+    box-shadow: 0 2px 4px rgb(15 34 58 / 12%);
+}
+.fs-label-wrap {
+    cursor: pointer;
+}
+.fs-option{
+    transition: all linear .1s;
+}
+.fs-option:hover {
+    background: #5b73e8;
+    color: white;
+}
+
+@media (max-width: 767px){
+    #page-topbar .navbar-header .vertical-menu-btn.toggleVerIcon{
+        display: block;
+        width: 60px;
+        text-align: right;
+    }
+    table.table-bordered.dataTable th.twoLastTd{
+        min-width: 80% !important;
+        max-width: 80% !important;
+        width: 80% !important;
+    }
+}
+
