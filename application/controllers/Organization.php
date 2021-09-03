@@ -29,18 +29,15 @@ class Organization extends CI_Controller {
 	        "is_deleted" => 0,
       	));  
 		$favourite_organization = $this->organization_model->get_favourite_organization(array(
-			"user_id"	=> $this->session->userdata('user_id'),
-	        "rand_str"   => $this->session->userdata('rand_str'), 
+			"user_id"	=> $this->session->userdata('user_id'),  
 	        "is_deleted" => 0,
-      	));
-		$favourite = [];
-		foreach($favourite_organization as $value){
-			array_push($favourite,$value->organization_id );
-		}
+      		));
+		$favourite = explode(',',$favourite_organization->organization_list);
+		
 	    $this->v_data = array(
 	    	'page_id' => 'organization',
-	      'organization' => $organization,
-		  'favourite_organization' => $favourite, 
+	      	'organization' => $organization,
+		  	'favourite_organization' => $favourite, 
 	    );
 	}
 	

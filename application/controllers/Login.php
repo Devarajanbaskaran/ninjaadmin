@@ -76,7 +76,7 @@ class Login extends CI_Controller {
         } 
         $this->session->user_lname       = $user->last_name;
         $this->session->user_email       = $user->email;
-        $this->session->isLoggedIn       =true; 
+        $this->session->isLoggedIn       =false; 
 
     }
 

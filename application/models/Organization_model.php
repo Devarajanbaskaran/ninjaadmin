@@ -13,7 +13,7 @@ class Organization_model extends CI_Model
   }
   public function get_favourite_organization($where = array())
   {
-    return $this->db->where($where)->get("sa_organization")->result();
+    return $this->db->select('GROUP_CONCAT(organization_id) AS organization_list')->where($where)->get("sa_organization")->row();
 
   }
   
